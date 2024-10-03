@@ -5,7 +5,7 @@ import { BooksService } from './books.service';
 import { BooksController } from './books.controller';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Book])], // Регистрируем репозиторий Book
+  imports: [TypeOrmModule.forFeature([Book])], 
   providers: [BooksService],
   controllers: [BooksController],
 })
